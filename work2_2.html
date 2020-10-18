@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>网格</title>
+    <style type="text/css">
+        body{ margin: 2px;  padding: 0;  }
+        .main{border: 1px solid black;  padding: 20px; }
+        .row{width: 100%; margin-left: 0; }
+        /* [class *="col"]代表包含col 的类名 ，比如说 col-md-4 ,demo-col-2(虚构的)等都可以匹配到*/
+        [class *="col"] {display: inline-block; padding: 9px; }
+        .row .inner{ height: 50px;background-color: rgb(194, 184, 184);border: 1px solid rgb(194, 184, 184);color: red;}
+        @media (max-width:768px) /* 小于768px*/
+        {
+            .col-xs-2 { width: calc(16.666% - 2em);}
+            .col-xs-3 { width: calc(25% - 2em );}
+            .col-xs-6 {width: calc(50% - 2em );}
+            .col-xs-8{ width: calc(66.666% - 2em);}
+            .col-xs-12 {width: calc(100% - 2em );}
+        }
+
+        @media (min-width:768px)/* 大于768px*/
+        {
+            .col-sm-1 {width: calc(8.333% - 2em ); }
+            .col-sm-2 {width: calc(16.666% - 2em );}
+            .col-sm-3 {width: calc(25% - 2em ); }
+            .col-sm-4 {width: calc(33.333% - 2em );}
+            .col-sm-6 { width: calc(50% - 2em ); }
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="row">
+        <div class="col-sm-4 col-xs-6"><div class="inner">四栏</div></div>
+        <div class="col-sm-4 col-xs-6"><div class="inner">四栏</div></div>
+        <div class="col-sm-4 col-xs-12"><div class="inner">四栏</div></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 col-xs-3"><div class="inner">三栏</div></div>
+        <div class="col-sm-6 col-xs-6"><div class="inner">六栏</div></div>
+        <div class="col-sm-3 col-xs-3"><div class="inner">三栏</div></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1 col-xs-2"><div class="inner">一栏</div></div>
+        <div class="col-sm-1 col-xs-2"><div class="inner">一栏</div></div>
+        <div class="col-sm-2 col-xs-8"><div class="inner">两栏</div></div>
+        <div class="col-sm-2 col-xs-3"><div class="inner">两栏</div></div>
+        <div class="col-sm-6 col-xs-3"><div class="inner">六栏</div></div>
+    </div>
+</div>
+</body>
+</html>

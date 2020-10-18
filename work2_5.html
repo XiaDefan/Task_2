@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>task2_5</title>
+      <style type="text/css">
+    table {border-color: #fff; }
+    th { background-color: grey; color: white;  }
+    tbody tr:nth-child(2n+1)>td:nth-child(2) {color: red;}
+    tbody tr:nth-child(2n) { color: black;  }
+    tbody tr:nth-child(-n+3) { color: red; }
+    tbody tr:nth-child(2n+1) { background-color: rgb(156, 154, 154);  } 
+    .in {width: 200px;  height: 15px; transition:width 1s; }
+    .shuru {text-align: center; margin: 20px; }
+    input:focus {width: 400px;height: 30px; }
+    .center {position: relative; width: 300px; height: 150px; margin: 50px auto;overflow: hidden;  }
+    .pho { position: absolute;margin: 0 auto;  display: inline-block;width: 200px; height: 200px; }
+    #one {background-color: blue;left: 0; }
+    #two {background-color: red; left: 300px;}
+    #three {background-color: black; left: 600px;}
+    .box { width: 60px;height: 30px;display: inline-block; background-color: rgb(156, 154, 154,0.5);text-align: center; }
+    a{ font-size:30px;color: seashell; line-height: 30px; text-decoration: none;  }
+    .last {text-align: center;}
+      </style>
+    </head>
+
+    <body>
+       
+    <table align="center" border="2" cellpadding="0" cellspacing="0" width="500" height="250">
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>网站</th>
+                <th>热度</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>卡塞尔学院</td>
+                <td>13000</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>卡塞尔学院</td>
+                <td>12000</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>卡塞尔学院</td>
+                <td>11000</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>卡塞尔学院</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>卡塞尔学院</td>
+                <td>9000</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>卡塞尔学院</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>卡塞尔学院</td>
+                <td>7000</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>卡塞尔学院</td>
+                <td>6000</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>卡塞尔学院</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>卡塞尔学院</td>
+                <td>4000</td>
+            </tr>
+        </tbody>.
+    </table>
+    <div class="shuru"><input type="text" class="in"></div>
+    <div class="center">
+        <div>
+            <div class="pho" id='one'></div>
+            <div class="pho" id='two'></div>
+            <div class="pho" id='three'></div>
+        </div>
+    </div>
+    <div class="last">
+    <div class="box"><a href="#one">1</a></div>
+    <div class="box"><a href="#two">2</a></div>
+    <div class="box"><a href="#three">3</a></div>
+</div>
+       
+    </body>
+</html>
